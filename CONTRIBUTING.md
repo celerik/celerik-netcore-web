@@ -7,7 +7,7 @@ The document covers the process for contributing to the code that is hosted on t
 - [DOs and DON'Ts](#dos-and-donts)
 - [Process for contributing](#process-for-contributing)
 
-This repository provides middlewares, filters and utilities for managing .Net Core Web APIs including utilities Cors, Logging, Exceptions, Resources, Security, Startup Pipelines, Swagger, Validations.
+This repository provides middlewares, filters and utilities for managing .Net Core Web APIs including Cors, Logging, Exceptions, Resources, Security, Startup Pipelines, Swagger, Validations.
 
 Issues and tasks for this repository are tracked in [celerik-netcore-web/projects](https://github.com/celerik/celerik-netcore-web/projects).
 

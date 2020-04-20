@@ -13,7 +13,7 @@
 
 ## What's it
 
-*Celerik.NetCore.Web* provides middlewares, filters and utilities for managing .Net Core Web APIs including utilities Cors, Logging, Exceptions, Resources, Security, Startup Pipelines, Swagger, Validations.
+*Celerik.NetCore.Web* provides middlewares, filters and utilities for managing .Net Core Web APIs including Cors, Logging, Exceptions, Resources, Security, Startup Pipelines, Swagger, Validations.
 
 ## Quick start
 
