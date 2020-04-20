@@ -1,22 +1,22 @@
 # Contributing
 
-Thank you for your interest in contributing to Celerik.NetCore.Services!
+Thank you for your interest in contributing to Celerik.NetCore.Web!
 
-The document covers the process for contributing to the code that is hosted on the [Celerik.NetCore.Services site](https://github.com/celerik/celerik-netcore-services). Contributions may be as simple as typo corrections or as complex as new service definitions.
+The document covers the process for contributing to the code that is hosted on the [Celerik.NetCore.Web site](https://github.com/celerik/celerik-netcore-web). Contributions may be as simple as typo corrections or as complex as new functionalities.
 
 - [DOs and DON'Ts](#dos-and-donts)
 - [Process for contributing](#process-for-contributing)
 
-This repository provides a codebaseline for .NET Core service-oriented project and abstractions for common services like Log, Security, MasterData, Settings. A built-in PayPal service is included as well.
+This repository provides middlewares, filters and utilities for managing .Net Core Web APIs including utilities Cors, Logging, Exceptions, Resources, Security, Startup Pipelines, Swagger, Validations.
 
-Issues and tasks for this repository are tracked in [celerik-netcore-services/projects](https://github.com/celerik/celerik-netcore-services/projects).
+Issues and tasks for this repository are tracked in [celerik-netcore-web/projects](https://github.com/celerik/celerik-netcore-web/projects).
 
 ## DOs and DON'Ts
 
-The following list shows some guiding rules that you should keep in mind when you're contributing to the Celerik.NetCore.Services:
+The following list shows some guiding rules that you should keep in mind when you're contributing to the Celerik.NetCore.Web:
 
 - **DON'T** surprise us with large pull requests. Instead, file an issue and start a discussion so we can agree on a direction before you invest a large amount of time. For bulk changes, break the work into smaller PRs (up to 100 files). This guideline is strongly recommended if your PR doesn't follow the following guidelines.
-- **DO** look at the current [labels](https://github.com/celerik/celerik-netcore-services/labels) issues for suggestions on tasks.
+- **DO** look at the current [labels](https://github.com/celerik/celerik-netcore-web/labels) issues for suggestions on tasks.
 - **DO** create one PR for each task. PRs that include multiple unrelated changes are much harder to review. That delays reviews and merging PRs. This guideline applies to reviews as well: we try not to suggest unrelated changes in reviews; we ask that community reviews adhere to this guideline.
 - **DO** provide a clear description of the work in your PR. Tell us what changed and why. The default description of "update article.md" isn't helpful for reviewers.
 - **DO** read the [style guide](https://docs.microsoft.com/en-us/dotnet/core/) guidelines. New additions should follow these guidelines.
@@ -29,35 +29,37 @@ These guidelines help us respect everyone's time. Many people contribute to thes
 
 You need a basic understanding of [Git and GitHub.com](https://guides.github.com/activities/hello-world/).
 
-**Step 1:** Skip this step for small changes (for example, if you're correcting a typo or immediately opening a pull request to address an issue that you find). If you're interested in coding new service definitions or in thoroughly revising existing services, open an [issue](https://github.com/celerik/celerik-netcore-services/issues) describing what you want to do.
+**Step 1:** Skip this step for small changes (for example, if you're correcting a typo or immediately opening a pull request to address an issue that you find). If you're interested in coding new functionalities or in thoroughly revising existing functionalities, open an [issue](https://github.com/celerik/celerik-netcore-web/issues) describing what you want to do.
 
-**Step 2:** Fork the `celerik-netcore-services` repo as needed and create a branch for your changes.
+**Step 2:** Fork the `celerik-netcore-web` repo as needed and create a branch for your changes.
 
 For small changes, you can use GitHub's web interface. Simply click the **Edit the file in your fork of this project** on the file you'd like to change. GitHub creates the new branch for you when you submit the changes.
 
 **Step 3:** Make the changes on this new branch.
 
-Add your service to the right folder or create a new one.
+Add your functionallity to the right folder or create a new one.
 
 ### Project structure
 
 ```
-Celerik.NetCore.Services
-  /Enumerations
-  /Model
+Celerik.NetCore.Web
+  /Cors
+  /Exceptions
+  /Logger
   /Resources
-  /Services
-  /Utilities
-Celerik.NetCore.Services.Test
-  /Model
+  /Security
+  /Startups
+  /Swagger
+  /Validations
+Celerik.NetCore.Web.Test
+  /Cors
   /Resources
-  /Services
-  /Utilities
+  /Swagger
 ```
 
 Be sure to add unit testing for new functions you are creating, and that all unit tests PASS.
 
-**Step 4:** Submit a Pull Request (PR) from your branch to `celerik-netcore-services/master`.
+**Step 4:** Submit a Pull Request (PR) from your branch to `celerik-netcore-web/master`.
 
 Each PR should usually address one issue at a time. The PR can modify one or multiple files. If you're addressing multiple fixes on different files, separate PRs are preferred.
 
@@ -70,5 +72,3 @@ The Celerik team will review your PR and let you know if there are any other upd
 The maintainers will merge your PR into the master branch once feedback has been applied and your change is approved.
 
 Note: `master` is the default branch accepting Pull Requests. It releases a package everytime the `head_commit.message` contains the word `[release]`.
-
-

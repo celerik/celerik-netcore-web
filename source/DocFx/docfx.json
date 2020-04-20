@@ -5,7 +5,7 @@
         {
           "files": ["**/**.cs"],
           "exclude": ["**/bin/**", "**/obj/**"],
-          "src": "./../Celerik.NetCore.Services/"
+          "src": "./../Celerik.NetCore.Web/"
         }
       ],
       "dest": "api",

@@ -4,25 +4,25 @@
     <Authors>Celerik</Authors>
     <Company>Celerik (IDlink S.A.S.)</Company>
     <Copyright>Celerik (©) 2020 (MIT)</Copyright>
-    <Description>Provides a codebaseline for .NET Core service-oriented project and abstractions for common services like Log, Security, MasterData, Settings. A built-in PayPal service is included as well.</Description>
+    <Description>Provides middlewares, filters and utilities for managing .Net Core Web APIs including utilities Cors, Logging, Exceptions, Resources, Security, Startup Pipelines, Swagger, Validations.</Description>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IncludeSymbols>true</IncludeSymbols>
     <LangVersion>latest</LangVersion>
     <PackageIcon>Celerik.png</PackageIcon>
-    <PackageId>Celerik.NetCore.Services</PackageId>
+    <PackageId>Celerik.NetCore.Web</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/celerik/celerik-netcore-services</PackageProjectUrl>
-    <PackageReleaseNotes>Added ApiBuilder class to add core services</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/celerik/celerik-netcore-web</PackageProjectUrl>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageTags>csharp, netcore, visual-studio, services, nuget</PackageTags>
+    <PackageTags>csharp, netcore, visual-studio, api, rest, nuget</PackageTags>
     <RepositoryType>Git</RepositoryType>
-    <RepositoryUrl>https://github.com/celerik/celerik-netcore-services</RepositoryUrl>
+    <RepositoryUrl>https://github.com/celerik/celerik-netcore-web</RepositoryUrl>
     <SignAssembly>false</SignAssembly>
-    <Summary>Provides a codebaseline for .NET Core service-oriented project and abstractions for common services like Log, Security, MasterData, Settings. A built-in PayPal service is included as well.</Summary>
+    <Summary>Provides middlewares, filters and utilities for managing .Net Core Web APIs including utilities Cors, Logging, Exceptions, Resources, Security, Startup Pipelines, Swagger, Validations.</Summary>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Title>Celerik.NetCore.Services</Title>
-    <Version>1.0.3</Version>
+    <Title>Celerik.NetCore.Web</Title>
+    <Version>1.0.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -30,12 +30,6 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <WarningsAsErrors />
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="ApiService\**" />
-    <EmbeddedResource Remove="ApiService\**" />
-    <None Remove="ApiService\**" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="9.0.0" />

@@ -4,26 +4,26 @@
     <Authors>Celerik</Authors>
     <Company>Celerik (IDlink S.A.S.)</Company>
     <Copyright>Celerik (©) 2020 (MIT)</Copyright>
-    <Description>Test project for Celerik.NetCore.Services.</Description>
+    <Description>Test project for Celerik.NetCore.Web.</Description>
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
     <IncludeSymbols>true</IncludeSymbols>
     <IsPackable>false</IsPackable>
     <LangVersion>latest</LangVersion>
     <PackageIcon>Celerik.png</PackageIcon>
-    <PackageId>Celerik.NetCore.Services.Test</PackageId>
+    <PackageId>Celerik.NetCore.Web.Test</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/celerik/celerik-netcore-services</PackageProjectUrl>
-    <PackageReleaseNotes>Added ApiBuilder class to add core services</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/celerik/celerik-netcore-web</PackageProjectUrl>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageTags>csharp, netcore, visual-studio, services, nuget</PackageTags>
+    <PackageTags>csharp, netcore, visual-studio, api, rest, nuget</PackageTags>
     <RepositoryType>Git</RepositoryType>
-    <RepositoryUrl>https://github.com/celerik/celerik-netcore-services</RepositoryUrl>
+    <RepositoryUrl>https://github.com/celerik/celerik-netcore-web</RepositoryUrl>
     <SignAssembly>false</SignAssembly>
-    <Summary>Test project for Celerik.NetCore.Services.</Summary>
+    <Summary>Test project for Celerik.NetCore.Web.</Summary>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <Title>Celerik.NetCore.Services.Test</Title>
-    <Version>1.0.3</Version>
+    <Title>Celerik.NetCore.Web.Test</Title>
+    <Version>1.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -44,7 +44,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Celerik.NetCore.Services\Celerik.NetCore.Services.csproj" />
+    <ProjectReference Include="..\Celerik.NetCore.Web\Celerik.NetCore.Web.csproj" />
   </ItemGroup>
 
 </Project>
