@@ -21,24 +21,24 @@ Suppress CA2007 ConfigureAwait warning in ASP.NET Core:
 Context and expression syntax for GitHub Actions:
  - https://help.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions
  
-Code Coverage in .NET Core Projects
+Code Coverage in .NET Core Projects:
  - https://codeburst.io/code-coverage-in-net-core-projects-c3d6536fd7d7
  
-Getting Started with DocFX
+Getting Started with DocFX:
  - https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html
  
-Use DocFx to document your existing .Net application
+Use DocFx to document your existing .Net application:
  - https://alexklingenbeck.de/articles/17-06-docfx.html
  
-GitHub Action to Deploy Static Assets to GitHub Pages
+GitHub Action to Deploy Static Assets to GitHub Pages:
  - https://github.com/maxheld83/ghpages
  
-A GitHub action to run DocFX and generate a documentation site.
+A GitHub action to run DocFX and generate a documentation site:
  - https://github.com/nikeee/docfx-action
 
-Convert PFX Certificate to Base64 String
+Convert PFX Certificate to Base64 String:
  - https://blog.techfabric.io/convert-pfx-certificate-to-base64-string/
 
-Signing nuget package
+Signing nuget package:
  - https://timheuer.com/blog/use-nuget-with-github-actions-github-packages/
  
