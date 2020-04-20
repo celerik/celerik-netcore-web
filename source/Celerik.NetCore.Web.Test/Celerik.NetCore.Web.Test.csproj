@@ -13,7 +13,7 @@
     <PackageId>Celerik.NetCore.Web.Test</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/celerik/celerik-netcore-web</PackageProjectUrl>
-    <PackageReleaseNotes>First release</PackageReleaseNotes>
+    <PackageReleaseNotes>Created first release</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>csharp, netcore, visual-studio, api, rest, nuget</PackageTags>
     <RepositoryType>Git</RepositoryType>
