@@ -2,7 +2,7 @@
 
 <img src="images/celerik.png" alt="Celerik" width="300">
 
-# .NET Core Services Library
+# .NET Core Web Library
 [![build](https://github.com/celerik/celerik-netcore-web/workflows/build/badge.svg)](https://github.com/celerik/celerik-netcore-web/actions?query=workflow%3Abuild)
 [![deploy](https://github.com/celerik/celerik-netcore-web/workflows/deploy/badge.svg)](https://github.com/celerik/celerik-netcore-web/actions?query=workflow%3Adeploy)
 [![documentation](https://github.com/celerik/celerik-netcore-web/workflows/documentation/badge.svg)](https://github.com/celerik/celerik-netcore-web/actions?query=workflow%3Adocumentation)
