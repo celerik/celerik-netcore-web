@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Authors>Celerik</Authors>
+    <Company>Celerik (IDlink S.A.S.)</Company>
+    <Copyright>Celerik (©) 2020 (MIT)</Copyright>
+    <Description>Test project for Celerik.NetCore.Services.</Description>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IsPackable>false</IsPackable>
+    <LangVersion>latest</LangVersion>
+    <PackageIcon>Celerik.png</PackageIcon>
+    <PackageId>Celerik.NetCore.Services.Test</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/celerik/celerik-netcore-services</PackageProjectUrl>
+    <PackageReleaseNotes>Added ApiBuilder class to add core services</PackageReleaseNotes>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageTags>csharp, netcore, visual-studio, services, nuget</PackageTags>
+    <RepositoryType>Git</RepositoryType>
+    <RepositoryUrl>https://github.com/celerik/celerik-netcore-services</RepositoryUrl>
+    <SignAssembly>false</SignAssembly>
+    <Summary>Test project for Celerik.NetCore.Services.</Summary>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Title>Celerik.NetCore.Services.Test</Title>
+    <Version>1.0.3</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.msbuild" Version="2.8.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.1.1" />
+    <PackageReference Include="coverlet.collector" Version="1.2.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Celerik.NetCore.Services\Celerik.NetCore.Services.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Authors>Celerik</Authors>
+    <Company>Celerik (IDlink S.A.S.)</Company>
+    <Copyright>Celerik (©) 2020 (MIT)</Copyright>
+    <Description>Provides a codebaseline for .NET Core service-oriented project and abstractions for common services like Log, Security, MasterData, Settings. A built-in PayPal service is included as well.</Description>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <LangVersion>latest</LangVersion>
+    <PackageIcon>Celerik.png</PackageIcon>
+    <PackageId>Celerik.NetCore.Services</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/celerik/celerik-netcore-services</PackageProjectUrl>
+    <PackageReleaseNotes>Added ApiBuilder class to add core services</PackageReleaseNotes>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageTags>csharp, netcore, visual-studio, services, nuget</PackageTags>
+    <RepositoryType>Git</RepositoryType>
+    <RepositoryUrl>https://github.com/celerik/celerik-netcore-services</RepositoryUrl>
+    <SignAssembly>false</SignAssembly>
+    <Summary>Provides a codebaseline for .NET Core service-oriented project and abstractions for common services like Log, Security, MasterData, Settings. A built-in PayPal service is included as well.</Summary>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Title>Celerik.NetCore.Services</Title>
+    <Version>1.0.3</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn />
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ApiService\**" />
+    <EmbeddedResource Remove="ApiService\**" />
+    <None Remove="ApiService\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="Celerik.NetCore.Util" Version="2.0.15" />
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.3" />
+    <PackageReference Include="System.Text.Json" Version="4.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\Celerik.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
