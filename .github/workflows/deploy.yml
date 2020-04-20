@@ -1,0 +1,100 @@
+name: deploy
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  DOTNET_VERSION: 3.1.100
+  SOLUTION_FILE: '**/*.sln'
+  TEST_PROJECT: '**/**/*Test.csproj'
+  TEST_FOLDER: './source/*.Test/'
+  COVERAGE_FILE: ./source/coverage.info
+  NUGET_PACKAGE_PUSH_URL: 'https://api.nuget.org/v3/index.json'
+  NUGET_PACKAGE_API_KEY: ${{ secrets.NUGET_PACKAGE_API_KEY }}
+  GITHUB_PACKAGE_PUSH_URL: 'https://nuget.pkg.github.com/equisoide/index.json'
+  GITHUB_PACKAGE_PUSH_USR: 'equisoide'
+
+jobs:
+  build:
+    if: contains(github.event.head_commit.message, '[release]')
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Setup .net core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: ${{env.DOTNET_VERSION}}
+    - name: Build with dotnet
+      run: dotnet build ${{env.SOLUTION_FILE}} --configuration Release
+    - name: Run unit tests
+      run: dotnet test ${{env.TEST_PROJECT}}
+    - name: Generate coverage report
+      run: |
+        cd ${{env.TEST_FOLDER}}
+        dotnet test /p:CollectCoverage=true /p:CoverletOutput=../ /p:CoverletOutputFormat=lcov
+    - name: Publish coverage report to coveralls.io
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        path-to-lcov: ${{env.COVERAGE_FILE}}
+
+  deploy_to_nuget:
+    needs: build
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Pack nuget package
+      run: dotnet pack ${{env.SOLUTION_FILE}} --configuration Release -o package
+    - name: Publish package artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: nupkg
+        path: package
+    - name: Publish package to nuget.org
+      run: dotnet nuget push **/*.nupkg
+           --source ${{ env.NUGET_PACKAGE_PUSH_URL }}
+           --api-key ${{ env.NUGET_PACKAGE_API_KEY }}
+           --skip-duplicate
+
+  deploy_to_github:
+    needs: deploy_to_nuget
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Download package artifact
+      uses: actions/download-artifact@master
+      with:
+        id: nupkg
+        name: nupkg
+    - name: Setup nuget
+      uses: NuGet/setup-nuget@v1.0.2
+      with:
+        nuget-version: latest
+    - name: Add github package source
+      run: nuget sources Add -Name "github" -Source ${{env.GITHUB_PACKAGE_PUSH_URL}} -UserName ${{env.GITHUB_PACKAGE_PUSH_USR}} -Password ${{ secrets.GITHUB_TOKEN }}
+    - name: Push to GitHub Packages
+      run: nuget push **/*.nupkg -source "github" -SkipDuplicate
+
+  create_tag:
+    runs-on: ubuntu-latest
+    needs: deploy_to_github
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v-${{ github.event.head_commit.id }}
+          release_name: Release ${{ github.event.head_commit.timestamp }}
+          draft: false
+          prerelease: false
