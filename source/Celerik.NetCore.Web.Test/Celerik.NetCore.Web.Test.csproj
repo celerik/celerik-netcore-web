@@ -13,7 +13,7 @@
     <PackageId>Celerik.NetCore.Web.Test</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/celerik/celerik-netcore-web</PackageProjectUrl>
-    <PackageReleaseNotes>Created first release</PackageReleaseNotes>
+    <PackageReleaseNotes>Updated Celerik.NetCore.Util reference to 2.0.16</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>csharp, netcore, visual-studio, api, rest, nuget</PackageTags>
     <RepositoryType>Git</RepositoryType>
@@ -23,7 +23,7 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <Title>Celerik.NetCore.Web.Test</Title>
-    <Version>1.0.0</Version>
+    <Version>2.0.16</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -35,7 +35,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.0" />
     <PackageReference Include="MSTest.TestAdapter" Version="2.1.1" />
     <PackageReference Include="coverlet.collector" Version="1.2.1">
       <PrivateAssets>all</PrivateAssets>
