@@ -41,12 +41,12 @@ namespace Celerik.NetCore.Web
                     Jsonify = true
                 });
 
-                context.Result = new OkObjectResult(new ApiResponse<object>
+                /*context.Result = new OkObjectResult(new ApiResponse<object>
                 {
                     Message = firstError.ErrorMessage,
                     MessageType = ApiMessageType.Error,
                     Success = false
-                });
+                });*/
             }
         }
 
