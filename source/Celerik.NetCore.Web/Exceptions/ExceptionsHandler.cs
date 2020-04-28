@@ -57,12 +57,12 @@ namespace Celerik.NetCore.Web
                         Details = formatedError
                     });
 
-                    await context.Response.WriteAsync(new ApiResponse<object>
+                    /*await context.Response.WriteAsync(new ApiResponse<object>
                     {
                         Message = WebResources.Get("ExceptionsHandler.GlobalExceptionMsg"),
                         MessageType = ApiMessageType.Error,
                         Success = false
-                    }.ToString());
+                    }.ToString());*/
                 });
             });
         }
