@@ -1,4 +1,5 @@
-﻿using Celerik.NetCore.Util;
+﻿using Celerik.NetCore.Services;
+using Celerik.NetCore.Util;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Celerik.NetCore.Web.Test

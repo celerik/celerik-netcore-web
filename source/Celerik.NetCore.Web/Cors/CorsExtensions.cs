@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Celerik.NetCore.Services;
 using Celerik.NetCore.Util;
 using Microsoft.Extensions.Configuration;
 
