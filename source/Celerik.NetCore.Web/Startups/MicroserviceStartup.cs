@@ -6,15 +6,27 @@ using System.Reflection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Localization;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 
 namespace Celerik.NetCore.Web
 {
+    /// <summary>
+    /// The class containing the startup methods for the application.
+    /// </summary>
     public static class MicroserviceStartup
     {
-        public static void ConfigureServices(IServiceCollection services, Action setupBusinessServices)
+        /// <summary>
+        /// Use this method to add services to the container.
+        /// </summary>
+        /// <param name="services">Specifies the contract for a collection of
+        /// service descriptors.</param>
+        public static void ConfigureServices(
+            IServiceCollection services,
+            IConfiguration config,
+            Action setupBusinessServices)
         {
             services.AddHttpContextAccessor();
             setupBusinessServices();
@@ -24,7 +36,7 @@ namespace Celerik.NetCore.Web
             {
                 setupAction.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "Sift ShoppingCart SVC",
+                    Title = "Sift Security SVC",
                     Version = "v1"
                 });
 
@@ -32,11 +44,19 @@ namespace Celerik.NetCore.Web
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 setupAction.IncludeXmlComments(xmlPath);
             });
-
-            services.AddMvc();
         }
 
-        public static void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        /// <summary>
+        /// Use this method to configure the HTTP request pipeline.
+        /// </summary>
+        /// <param name="app">Provides the mechanisms to configure an
+        /// application's request pipeline.</param>
+        /// <param name="env">Provides information about the web hosting
+        /// environment an application is running in.</param>
+        public static void Configure(
+            IApplicationBuilder app,
+            IWebHostEnvironment env,
+            IConfiguration config)
         {
             if (env.IsDevelopment())
                 app.UseDeveloperExceptionPage();
