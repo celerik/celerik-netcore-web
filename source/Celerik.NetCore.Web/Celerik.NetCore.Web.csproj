@@ -12,7 +12,7 @@
     <PackageId>Celerik.NetCore.Web</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/celerik/celerik-netcore-web</PackageProjectUrl>
-    <PackageReleaseNotes>Improved code base line</PackageReleaseNotes>
+    <PackageReleaseNotes>Added suport to JsonStringLocalizer</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>csharp, netcore, visual-studio, api, rest, nuget</PackageTags>
     <RepositoryType>Git</RepositoryType>
@@ -22,7 +22,7 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <Title>Celerik.NetCore.Web</Title>
-    <Version>2.2.0</Version>
+    <Version>2.3.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
