@@ -26,6 +26,7 @@ namespace Celerik.NetCore.Web
         public static void ConfigureServices(
             IServiceCollection services,
             IConfiguration config,
+            string apiName,
             Action setupBusinessServices)
         {
             services.AddHttpContextAccessor();
@@ -36,7 +37,7 @@ namespace Celerik.NetCore.Web
             {
                 setupAction.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "Sift Security SVC",
+                    Title = apiName,
                     Version = "v1"
                 });
 
@@ -56,7 +57,8 @@ namespace Celerik.NetCore.Web
         public static void Configure(
             IApplicationBuilder app,
             IWebHostEnvironment env,
-            IConfiguration config)
+            IConfiguration config,
+            string apiName)
         {
             if (env.IsDevelopment())
                 app.UseDeveloperExceptionPage();
@@ -65,11 +67,11 @@ namespace Celerik.NetCore.Web
             app.UseRouting();
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
 
-            UseSwagger(app);
+            UseSwagger(app, apiName);
             UseLocalization(app);
         }
 
-        private static void UseSwagger(IApplicationBuilder app)
+        private static void UseSwagger(IApplicationBuilder app, string apiName)
         {
             app.UseSwagger(setupAction =>
             {
@@ -85,7 +87,7 @@ namespace Celerik.NetCore.Web
 
             app.UseSwaggerUI(setupAction =>
             {
-                setupAction.SwaggerEndpoint("/swagger/v1/swagger.json", "Sift ShoppingCart SVC V1");
+                setupAction.SwaggerEndpoint("/swagger/v1/swagger.json", apiName);
                 setupAction.RoutePrefix = string.Empty;
             });
         }
