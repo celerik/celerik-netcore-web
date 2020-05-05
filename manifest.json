@@ -1,0 +1,302 @@
+{
+  "homepages": [],
+  "source_base_path": "/github/workspace/source/DocFx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Celerik.NetCore.Web.CorsConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Celerik.NetCore.Web.CorsConfig.html",
+          "hash": "pn22Y2ZNGj7BwSELv9UxpA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Celerik.NetCore.Web.CorsExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Celerik.NetCore.Web.CorsExtensions.html",
+          "hash": "3VN+7L+YOZa2fTqIX1VvUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Celerik.NetCore.Web.CorsHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Celerik.NetCore.Web.CorsHandler.html",
+          "hash": "eOHUwdv6ZbgS7AGCTY1UEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Celerik.NetCore.Web.CorsOptionsMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Celerik.NetCore.Web.CorsOptionsMiddleware.html",
+          "hash": "HQWr8Spd5cA+Fd0vL7BGAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Celerik.NetCore.Web.CorsPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Celerik.NetCore.Web.CorsPolicy.html",
+          "hash": "O47HfS+5BzPPvHwMpZtAwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Celerik.NetCore.Web.ExceptionsHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Celerik.NetCore.Web.ExceptionsHandler.html",
+          "hash": "U0Qhz50qhqVdS0bhfIRYIw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Celerik.NetCore.Web.HttpContextLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Celerik.NetCore.Web.HttpContextLogger.html",
+          "hash": "NRwgzFbLRqsi5bG+Il64kw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Celerik.NetCore.Web.HttpContextLoggerConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Celerik.NetCore.Web.HttpContextLoggerConfig.html",
+          "hash": "kFHM4CAxTddEhkmOgCzO0g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Celerik.NetCore.Web.LogRequestFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Celerik.NetCore.Web.LogRequestFilter.html",
+          "hash": "Ub0Iuv5JMHuMyBGpmBS2wg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Celerik.NetCore.Web.MicroserviceStartup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Celerik.NetCore.Web.MicroserviceStartup.html",
+          "hash": "u0fXVK/6UkFUvKuSlt7E0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Celerik.NetCore.Web.PermissionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Celerik.NetCore.Web.PermissionAttribute.html",
+          "hash": "LUgT4U/4x0d8NJFL0eilYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Celerik.NetCore.Web.PermissionFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Celerik.NetCore.Web.PermissionFilter.html",
+          "hash": "TK2pskxWpkWrXo4ZvKZmpA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Celerik.NetCore.Web.SwaggerConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Celerik.NetCore.Web.SwaggerConfig.html",
+          "hash": "+odqxl6d5gRGPQjxAmQIBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Celerik.NetCore.Web.SwaggerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Celerik.NetCore.Web.SwaggerExtensions.html",
+          "hash": "cvuba6NH+aBi6qX7nJSEgQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Celerik.NetCore.Web.SwaggerHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Celerik.NetCore.Web.SwaggerHandler.html",
+          "hash": "2b4f2Snae+2gqVQAc3+9Yw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Celerik.NetCore.Web.SwaggerOperationFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Celerik.NetCore.Web.SwaggerOperationFilter.html",
+          "hash": "TzAsKfH2HjVRU6DfSbaFzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Celerik.NetCore.Web.UserDataClaimMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Celerik.NetCore.Web.UserDataClaimMiddleware.html",
+          "hash": "RuyPRL+nG6fjjcm/OO/ZNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Celerik.NetCore.Web.ValidateModelStateFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Celerik.NetCore.Web.ValidateModelStateFilter.html",
+          "hash": "ti0umf1UQzNJZxEbTBgQtQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Celerik.NetCore.Web.WebResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Celerik.NetCore.Web.WebResources.html",
+          "hash": "lqP5UgB/vRvqgaxTlUmozQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Celerik.NetCore.Web.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Celerik.NetCore.Web.html",
+          "hash": "QONDn3WWI2DO+333StNP2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "DNS3nJZwdH7a/AOMXs49Ww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 20,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
