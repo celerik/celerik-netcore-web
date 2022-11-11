@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Authors>Celerik</Authors>
     <Company>Celerik (IDlink S.A.S.)</Company>
-    <Copyright>Celerik (©) 2020 (MIT)</Copyright>
+    <Copyright>Celerik (©) 2022 (MIT)</Copyright>
     <Description>Provides middlewares, filters and utilities for managing .Net Core Web APIs including utilities Cors, Logging, Exceptions, Resources, Security, Startup Pipelines, Swagger, Validations.</Description>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IncludeSymbols>true</IncludeSymbols>
@@ -12,7 +12,7 @@
     <PackageId>Celerik.NetCore.Web</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/celerik/celerik-netcore-web</PackageProjectUrl>
-    <PackageReleaseNotes>Added suport to JsonStringLocalizer</PackageReleaseNotes>
+    <PackageReleaseNotes>Upgrated target framework to .NET 6.0</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>csharp, netcore, visual-studio, api, rest, nuget</PackageTags>
     <RepositoryType>Git</RepositoryType>
@@ -20,9 +20,9 @@
     <SignAssembly>false</SignAssembly>
     <Summary>Provides middlewares, filters and utilities for managing .Net Core Web APIs including utilities Cors, Logging, Exceptions, Resources, Security, Startup Pipelines, Swagger, Validations.</Summary>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <Title>Celerik.NetCore.Web</Title>
-    <Version>2.5.0</Version>
+    <Version>3.0.2</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -41,14 +41,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Celerik.NetCore.Services" Version="2.5.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.3" />
-    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.0.0">
+    <PackageReference Include="Celerik.NetCore.Services" Version="3.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.11" />
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.2">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.4.1" />
-    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.4.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.4.0" />
   </ItemGroup>
 
 </Project>

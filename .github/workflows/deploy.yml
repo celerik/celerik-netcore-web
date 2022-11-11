@@ -6,15 +6,15 @@ on:
       - master
 
 env:
-  DOTNET_VERSION: 3.1.100
+  DOTNET_VERSION: 6.x
   SOLUTION_FILE: '**/*.sln'
   TEST_PROJECT: '**/**/*Test.csproj'
   TEST_FOLDER: './source/*.Test/'
   COVERAGE_FILE: ./source/coverage.info
   NUGET_PACKAGE_PUSH_URL: 'https://api.nuget.org/v3/index.json'
   NUGET_PACKAGE_API_KEY: ${{ secrets.NUGET_PACKAGE_API_KEY }}
-  GITHUB_PACKAGE_PUSH_URL: 'https://nuget.pkg.github.com/equisoide/index.json'
-  GITHUB_PACKAGE_PUSH_USR: 'equisoide'
+  GITHUB_PACKAGE_PUSH_URL: 'https://nuget.pkg.github.com/celerik/index.json'
+  GITHUB_PACKAGE_PUSH_USR: 'celerik'
 
 jobs:
   build:
@@ -25,7 +25,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Setup .net core
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-dotnet@v3
       with:
         dotnet-version: ${{env.DOTNET_VERSION}}
     - name: Build with dotnet
@@ -74,6 +74,8 @@ jobs:
         name: nupkg
     - name: Setup nuget
       uses: NuGet/setup-nuget@v1.0.2
+      env:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
       with:
         nuget-version: latest
     - name: Add github package source

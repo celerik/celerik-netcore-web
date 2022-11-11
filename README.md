@@ -24,10 +24,9 @@ PM > Install-Package Celerik.NetCore.Web
 ## API and examples
 
  - Check out API's documentation [here](https://celerik.github.io/celerik-netcore-web/api/Celerik.NetCore.Web.html).
- - Check out tutorials on Celerik's blog [here](http://celerik.com).
  
 ## Requirements
-  - .NETStandard 2.0
+  - .NET 6.0
   
 ## CI/CD pipeline
 
