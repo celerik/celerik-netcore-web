@@ -3,7 +3,7 @@ name: build
 on: [push]
 
 env:
-  DOTNET_VERSION: 3.1.100
+  DOTNET_VERSION: 6.x
   SOLUTION_FILE: '**/*.sln'
   TEST_PROJECT: '**/**/*Test.csproj'
   TEST_FOLDER: './source/*.Test/'
@@ -18,7 +18,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Setup .net core
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-dotnet@v3
       with:
         dotnet-version: ${{env.DOTNET_VERSION}}
     - name: Build with dotnet
