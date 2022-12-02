@@ -24,6 +24,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <Title>Celerik.NetCore.Web.Test</Title>
     <Version>3.0.2</Version>
+    <ReleaseVersion>3.0.3</ReleaseVersion>
   </PropertyGroup>
 
   <ItemGroup>
