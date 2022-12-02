@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Celerik.NetCore.Web", "Celerik.NetCore.Web\Celerik.NetCore.Web.csproj", "{C40BAD83-0C13-4AF0-9167-886BC4C171BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Celerik.NetCore.Web", "Celerik.NetCore.Web\Celerik.NetCore.Web.csproj", "{C40BAD83-0C13-4AF0-9167-886BC4C171BF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Celerik.NetCore.Web.Test", "Celerik.NetCore.Web.Test\Celerik.NetCore.Web.Test.csproj", "{0F6B3736-5C38-47A1-93AA-93C1C901701D}"
 EndProject
@@ -34,5 +34,8 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C7A22199-ADBF-4C5A-AD51-691CFFE2E5FD}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		version = 3.0.3
 	EndGlobalSection
 EndGlobal
