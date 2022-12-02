@@ -41,7 +41,7 @@ namespace Celerik.NetCore.Web
                     Version = "v1"
                 });
 
-                var xmlFile = $"{Assembly.GetEntryAssembly().GetName().Name}.xml";
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 setupAction.IncludeXmlComments(xmlPath);
             });
