@@ -44,3 +44,4 @@ Check out the road map of *Celerik.NetCore.Web* [here](ROADMAP.md).
 
 ## How to contribute
 Check out the contributing guide [here](CONTRIBUTING.md).
+
