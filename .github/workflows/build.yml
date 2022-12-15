@@ -25,12 +25,12 @@ jobs:
       run: dotnet build ${{env.SOLUTION_FILE}} --configuration Release
     - name: Run unit tests
       run: dotnet test ${{env.TEST_PROJECT}}
-    - name: Generate coverage report
-      run: |
-        cd ${{env.TEST_FOLDER}}
-        dotnet test /p:CollectCoverage=true /p:CoverletOutput=../ /p:CoverletOutputFormat=lcov
-    - name: Publish coverage report to coveralls.io
-      uses: coverallsapp/github-action@master
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        path-to-lcov: ${{env.COVERAGE_FILE}}
+    #- name: Generate coverage report
+    #  run: |
+    #    cd ${{env.TEST_FOLDER}}
+    #    dotnet test /p:CollectCoverage=true /p:CoverletOutput=../ /p:CoverletOutputFormat=lcov
+    #- name: Publish coverage report to coveralls.io
+    #  uses: coverallsapp/github-action@master
+    #  with:
+    #    github-token: ${{ secrets.GITHUB_TOKEN }}
+    #    path-to-lcov: ${{env.COVERAGE_FILE}}
