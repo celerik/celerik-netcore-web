@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -43,6 +44,13 @@ namespace Celerik.NetCore.Web
 
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+
+                var addAuthHeader = config["SwaggerConfig:AddAuthorizationHeader"];
+                if (addAuthHeader != null && addAuthHeader.ToLower() == "true")
+                {
+                    setupAction.OperationFilter<AuthorizationHeader>();
+                }
+
                 setupAction.IncludeXmlComments(xmlPath);
             });
         }
@@ -65,6 +73,21 @@ namespace Celerik.NetCore.Web
 
             app.UseHttpsRedirection();
             app.UseRouting();
+
+            var addAuthHeader = config["SwaggerConfig:AddAuthorizationHeader"];
+            if (addAuthHeader != null && addAuthHeader.ToLower() == "true")
+            {
+                app.UseAuthorization();
+                app.Use((httpContext, next) =>
+                {
+                    if (httpContext.Request.Headers["X-Authorization"].Any())
+                    {
+                        httpContext.Request.Headers.Add("Authorization", httpContext.Request.Headers["X-Authorization"]);
+                    }
+                    return next();
+                });
+            }
+
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
 
             UseSwagger(app, apiName);
