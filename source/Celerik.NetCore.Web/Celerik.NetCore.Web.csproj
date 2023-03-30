@@ -12,10 +12,7 @@
     <PackageId>Celerik.NetCore.Web</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/celerik/celerik-netcore-web</PackageProjectUrl>
-    <PackageReleaseNotes>
-        Upgrated target framework to .NET 6.0
-        Fixed swagger XML generation
-    </PackageReleaseNotes>
+    <PackageReleaseNotes>Added Authorization Header logic</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>csharp, netcore, visual-studio, api, rest, nuget</PackageTags>
     <RepositoryType>Git</RepositoryType>
@@ -25,8 +22,8 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <TargetFramework>net6.0</TargetFramework>
     <Title>Celerik.NetCore.Web</Title>
-    <Version>3.0.3</Version>
-    <ReleaseVersion>3.0.3</ReleaseVersion>
+    <Version>3.0.4</Version>
+    <ReleaseVersion>3.0.4</ReleaseVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
