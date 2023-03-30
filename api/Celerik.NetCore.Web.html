@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Celerik.NetCore.Web
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Celerik.NetCore.Web
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Celerik.NetCore.Web">
+  
+  <h1 id="Celerik_NetCore_Web" data-uid="Celerik.NetCore.Web" class="text-break">Namespace Celerik.NetCore.Web
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Celerik.NetCore.Web.AuthorizationHeader.html">AuthorizationHeader</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Celerik.NetCore.Web.CorsConfig.html">CorsConfig</a></h4>
+      <section><p>Defines CORS configuration for the current environment.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Web.CorsExtensions.html">CorsExtensions</a></h4>
+      <section><p>Adds some extension methods related to the Cors functionality.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Web.CorsHandler.html">CorsHandler</a></h4>
+      <section><p>Handler to enable CORS. Policies are read from the appsettings.json file.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Web.CorsOptionsMiddleware.html">CorsOptionsMiddleware</a></h4>
+      <section><p>Middleware to process OPTIONS requests when CORS is enabled.</p>
+<p>This middleware is necessary because POST request don´t work even
+with CORS enabled. This is because browsers send an OPTIONS request before
+the POST request which is not proccesed by the Api.</p>
+<p>This middleware is added by the CorsHandler class, so you don´t have to
+worry for adding it from the Startup.cs class.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Web.ExceptionsHandler.html">ExceptionsHandler</a></h4>
+      <section><p>Handler to add global exception handling, specifically we do the following:</p>
+<ol>
+<li>Log the exception</li>
+<li>Writte a propper ApiResponse&lt;TData&gt; object.</li>
+</ol>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Web.HttpContextLogger.html">HttpContextLogger</a></h4>
+      <section><p>Adds extension methods to the HttpContext class in order to log information.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Web.HttpContextLoggerConfig.html">HttpContextLoggerConfig</a></h4>
+      <section><p>Defines log configuration for the HttpContextLoger.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Web.LogRequestFilter.html">LogRequestFilter</a></h4>
+      <section><p>Filter to log the lifetime of a controller action. We log the begining
+and end of the execution.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Web.MicroserviceStartup.html">MicroserviceStartup</a></h4>
+      <section><p>The class containing the startup methods for the application.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Web.PermissionAttribute.html">PermissionAttribute</a></h4>
+      <section><p>Custom Attribute to authorize access to an endpoint based on User Permissions.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Web.PermissionFilter.html">PermissionFilter</a></h4>
+      <section><p>Custom Filter to restrict access to an endpoint based on user permissions.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Web.SwaggerConfig.html">SwaggerConfig</a></h4>
+      <section><p>Defines Swagger configuration for the current environment.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Web.SwaggerExtensions.html">SwaggerExtensions</a></h4>
+      <section><p>Adds some extensions methods related to the Swagger functionality.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Web.SwaggerHandler.html">SwaggerHandler</a></h4>
+      <section><p>Handler to enable Swagger. Configuration is read from the appsettings.json file.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Web.SwaggerOperationFilter.html">SwaggerOperationFilter</a></h4>
+      <section><p>Implementation of the IOperationFilter interface to customize
+Swagger operations, in particular to allow adding the
+Authorization header paremeter to the endpoints that require
+authorization.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Web.UserDataClaimMiddleware.html">UserDataClaimMiddleware</a></h4>
+      <section><p>Middleware to include the data of the current authenticated user
+into the user claims. This data is a UserDto object which contains
+useful information such as the user permissions.</p>
+<p>When we receive the Bearer token in the Authentication header,
+this token contains a claim with the UserId, so we use that id
+in order to retrieve the full information of the user.</p>
+<p>This middleware is necessary because we only trust in the UserId
+comming from the Authentication header, but the rest of information
+of the user can change during the token lifecycle, so it is necesary
+to get a fresh copy of the user information for each request.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Web.ValidateModelStateFilter.html">ValidateModelStateFilter</a></h4>
+      <section><p>Filter to validate the ModelState. In case the model state is invalid, we
+send out a custom ApiResponse&lt;TData&gt; and log a propper message.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Web.WebResources.html">WebResources</a></h4>
+      <section><p>Provides localized strings for this layer.</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="Celerik.NetCore.Web.CorsPolicy.html">CorsPolicy</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
